@@ -2,23 +2,44 @@
 package logikaifeladat;
 
 public class Allitas {
-    private int allitas;
+    private String allitas, anyag;
+    private boolean kincs;
 
-    public Allitas(int allitas) {
+    public Allitas(String allitas, String anyag, boolean kincs) {
         this.allitas = allitas;
+        this.anyag = anyag;
+        this.kincs = kincs;
     }
 
-    public int getAllitas() {
+    public String getAllitas() {
         return allitas;
     }
 
-    public void setAllitas(int allitas) {
+    public void setAllitas(String allitas) {
         this.allitas = allitas;
+    }
+
+    public String getAnyag() {
+        return anyag;
+    }
+
+    public void setAnyag(String anyag) {
+        this.anyag = anyag;
+    }
+
+    public boolean isKincs() {
+        return kincs;
+    }
+
+    public void setKincs(boolean kincs) {
+        this.kincs = kincs;
     }
 
     @Override
     public String toString() {
-        return "A(z) " + allitas +" állítás";
+        return "Allitas{" + "allitas=" + allitas + ", anyag=" + anyag + ", kincs=" + kincs + '}';
     }
+
+    
     
 }
