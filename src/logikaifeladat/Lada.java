@@ -1,11 +1,11 @@
 
 package logikaifeladat;
 
-public class Allitas {
+public class Lada {
     private String allitas, anyag;
     private boolean kincs;
 
-    public Allitas(String allitas, String anyag, boolean kincs) {
+    public Lada(String allitas, String anyag, boolean kincs) {
         this.allitas = allitas;
         this.anyag = anyag;
         this.kincs = kincs;
