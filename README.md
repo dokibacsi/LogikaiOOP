@@ -1,1 +1,1 @@
-# LogikaiOOP
+### Bella Ricsi, Katona Valentin
