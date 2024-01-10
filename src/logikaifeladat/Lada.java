@@ -23,7 +23,6 @@ public class Lada {
         this.anyag = anyag;
         this.kincs = kincs;
     }
-
     public void setAllitas(String allitas) {
         this.allitas = allitas;
     }
@@ -35,14 +34,15 @@ public class Lada {
     public void setKincs(boolean kincs) {
         this.kincs = kincs;
     }
-
     public String getAllitas() {
         return allitas;
     }
 
+
     public String getAnyag() {
         return anyag;
     }
+
 
     public boolean isKincs() {
         return kincs;
@@ -52,8 +52,6 @@ public class Lada {
     public String toString() {
         return "Lada{" + "allitas=" + allitas + ", anyag=" + anyag + ", kincs=" + kincs + '}';
     }
-    
-    
-    
-    
+
+
 }
