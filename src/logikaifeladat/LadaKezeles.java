@@ -7,31 +7,36 @@ public class LadaKezeles {
     private Lada lada2;
     private Lada lada3;
 
-    public LadaKezeles() {
-        lada1 = new Lada("Meglepetés láda", "fa", false);
-        lada2 = new Lada("Meglepetés láda", "kő", false);
-        lada3 = new Lada("Meglepike láda", "arany", true);
+    public Lada[] LadaKezeles() {
+        lada1 = new Lada("Én rejtem a kincset!", "Arany", false,1);
+        lada2 = new Lada("Nem én rejtem!", "Ezüst", true,2);
+        lada3 = new Lada("az arany hazudik!", "Bronz", false,3);
+        Lada[] ladak={lada1,lada2,lada3};
+        return ladak; 
     }
 
     public void ladaAdatokMegjelenitese() {
-        System.out.println(lada1);
-        System.out.println(lada2);
-        System.out.println(lada3);
-        beker();
+        System.out.println("előtted van 3 láda :");
+        String crateEmoji = "\uD83D\uDCE6"; // Ez a láda emoji Unicode kódja
+        System.out.println("1."+crateEmoji + " " + "2."+crateEmoji + " " + "3."+crateEmoji);
+        for (Lada LadaKezele : LadaKezeles()) {
+            System.out.println(LadaKezele);
+        }
+        beker(LadaKezeles());
     }
 
-    private void beker() {
+    private void beker(Lada[] lada) {
+        System.out.println("Csak az egyik állítás igaz");
         Scanner sc = new Scanner(System.in);
-        System.out.print("Adjon meg egy számot 1-től 3-ig: ");
-        int szam = sc.nextInt();
+        System.out.print("Melyik ládában van a kincs? (1-2-3): ");
+        int szam = sc.nextInt()-1;
         
-        if (szam == 1){
+        if (lada[szam].isKincs()){
             System.out.println("A válasz jó");
-        }else if(szam == 2){
+        }else{
             System.out.println("A válasz nem jó");
-        }else if(szam == 3){
-            System.out.println("A válasz nem jó");
-        }
+       
+    }
     }
 
     
