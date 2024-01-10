@@ -5,6 +5,7 @@ import java.util.Arrays;
 
 public class Lada {
     private String allitas, anyag;
+    private int index;
     private boolean kincs;
 
 
@@ -17,12 +18,14 @@ public class Lada {
     }
     
     public Lada(String allitas, String anyag) {
-        this(allitas, anyag, false);
+        this(allitas, anyag, false,1 );
     }
 
 
-    public Lada(String allitas, String anyag, boolean kincs) {
+
+    public Lada(String allitas, String anyag, boolean kincs,int index) {
         this.allitas = allitas;
+        this.index=index;
         this.anyag = anyag;
         this.kincs = kincs;
     }
@@ -56,7 +59,8 @@ public class Lada {
 
     @Override
     public String toString() {
-        return "Lada{" + "allitas=" + allitas + ", anyag=" + anyag + ", kincs=" + kincs + '}';
+        return "A(z) "+index +". egy " + anyag + " 📦(láda) állítísa: "+ allitas ;
+
     }
 
     
