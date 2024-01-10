@@ -1,7 +1,7 @@
 # ARANY | EZÜST | BRONZ
 # LOGIKAI OOP FELADAT
 
-#### Bella Ricsi, Katona Valentin
+#### Bella Ricsi, Katona Valentin, Vörös Dominik
 
 #### Arany láda: "én rejtem a kincset!",
 #### Ezüst láda: "nem én rejtem a kincset!",
