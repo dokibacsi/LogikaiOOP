@@ -1,6 +1,7 @@
 package logikaifeladat;
 
 import java.util.Scanner;
+import model.Lada;
 
 public class LadaKezeles {
     private Lada lada1;

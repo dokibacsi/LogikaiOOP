@@ -5,7 +5,8 @@
 package logikaifeladat.View;
 
 import javax.swing.JOptionPane;
-import logikaifeladat.Lada;
+
+import model.Lada;
 
 /**
  *
