@@ -1,5 +1,5 @@
 
-package logikaifeladat;
+package model;
 
 import java.util.Arrays;
 
