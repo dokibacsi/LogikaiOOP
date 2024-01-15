@@ -21,6 +21,10 @@ public class Lada {
         this(allitas, anyag, false,1 );
     }
 
+    public int getIndex() {
+        return index;
+    }
+
 
 
     public Lada(String allitas, String anyag, boolean kincs,int index) {

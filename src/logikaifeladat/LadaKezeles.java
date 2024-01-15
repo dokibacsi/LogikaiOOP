@@ -37,7 +37,9 @@ public class LadaKezeles {
             System.out.println("A válasz nem jó");
        
     }
+        
     }
+    
 
     
 }
